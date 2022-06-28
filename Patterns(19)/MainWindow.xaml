@@ -1,0 +1,40 @@
+﻿<Window x:Class="Patterns_19_.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Patterns_19_"
+        mc:Ignorable="d"
+        Title="Patterns" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="dataGrid" Margin="10,31,10,217"/>
+
+        <Button x:Name="createButton" FontSize="18" Content="Создать"
+                HorizontalAlignment="Left" Margin="16,323,0,0"
+                VerticalAlignment="Top" Height="47" Width="170" Click="createButton_Click"/>
+
+        <TextBox x:Name="animalType" HorizontalAlignment="Left" ToolTip="Вид животного" FontSize="17"
+                 Margin="16,268,0,0"
+                 TextWrapping="Wrap" Text="" VerticalAlignment="Top"
+                 Width="213" Height="34"/>
+
+        <TextBox x:Name="animalName" HorizontalAlignment="Left" FontSize="17" 
+                ToolTip="Прозвище"
+                Margin="263,268,0,0"
+                TextWrapping="Wrap" Text="" VerticalAlignment="Top"
+                Width="213" Height="34"/>
+
+        <Button x:Name="showListButton" FontSize="18" Content="Показать животных"
+            HorizontalAlignment="Left" Margin="263,323,0,0"
+            VerticalAlignment="Top" Height="47" Width="170" Click="showListButton_Click"/>
+        
+        <Button x:Name="downloadTxtButton" FontSize="18" Content="Скачать в .TXT"
+            HorizontalAlignment="Left" Margin="581,254,0,0"
+            VerticalAlignment="Top" Height="47" Width="170" Click="downloadTxtButton_Click"/>
+        
+        <Button x:Name="downloadDocxButton" FontSize="18" Content="Скачать в .Docx"
+            HorizontalAlignment="Left" Margin="581,339,0,0"
+            VerticalAlignment="Top" Height="47" Width="170" Click="downloadDocxButton_Click"/>
+
+    </Grid>
+</Window>
